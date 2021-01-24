@@ -7,7 +7,6 @@ The aim of this project was to create a deep learning classifier capable of diag
     * csvs - Directory containing csv files with extracted features for each fearture set for both split and whole files
     * full_model_testing - Directory containing both csv files with training parameters and exported models for each fold trained with the newest model version
     * layer_test_train_outputs - Directory with csv files containing training parameters of multiple tested deep layer architectures
-    * Test sripts - Directory containing test script, not used in final project
     * train_outputs - Directory containing csv files with training parameters for the first model version
 
 2. Files:
@@ -36,8 +35,8 @@ The first version of the model was based on [this TensorFlow tutorial](https://w
 * ID7: in > x > x/2 > x/4 > out
 where x was 32, 64 or 128 (three values of x tested for each architecture). Architecture ID2 with 128 as x achieved the best mean validation accuracy for all folds, so it was chosen as the final architecture. After finding the best architecture I added in callbacks to save models and implemented confusion matrix (Fig 1) and classification report (Fig 2).
 ##### Fig 1: Confusion matrix:
-![alt text](img1.png "Logo Title Text 1")
+![alt text](img1.png "Confusion matrix")
 ##### Fig 2: Classification report:
-![alt text](img2.png "Logo Title Text 1")
+![alt text](img2.PNG "Classification report")
 
 Minimum viable product for this project was to achieve 90% accuracy, and as can be seen on figures above, it was achieved, so the project was concluded.
